@@ -60,11 +60,11 @@
 
 
 # Teammates
-  Kwanghun Kim. https://www.github.com/kikiru328
-  Yubeen Song. https://github.com/yibnn
-  Hyejeong Choi. https://github.com/601chl
-  Seunghey Chae. https://github.com/SeunghyeChae
-  Jonghyeon Lee. https://github.com/Jjongu
+  - Kwanghun Kim. https://www.github.com/kikiru328
+  - Yubeen Song. https://github.com/yibnn
+  - Hyejeong Choi. https://github.com/601chl
+  - Seunghey Chae. https://github.com/SeunghyeChae
+  - Jonghyeon Lee. https://github.com/Jjongu
   
   
   
