@@ -23,6 +23,12 @@
   <property name="styleSheet">
    <string notr="true">background-color:rgb(247, 242, 231);</string>
   </property>
+  <property name="sizeGripEnabled">
+   <bool>false</bool>
+  </property>
+  <property name="modal">
+   <bool>false</bool>
+  </property>
   <widget class="QLabel" name="input_info">
    <property name="geometry">
     <rect>
@@ -53,9 +59,9 @@ border-top-left-radius: 20px;
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>720</x>
+     <x>660</x>
      <y>180</y>
-     <width>51</width>
+     <width>171</width>
      <height>41</height>
     </rect>
    </property>
@@ -77,6 +83,9 @@ color: rgb(42, 42, 42)</string>
    </property>
    <property name="text">
     <string>Info</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="QLineEdit" name="input_name">
@@ -283,32 +292,6 @@ font: 11pt &quot;AcadEref&quot;; color: rgb(150, 150, 150);</string>
      <string>yyyy-MM-dd  hh:mm</string>
     </property>
    </widget>
-   <widget class="QLabel" name="img">
-    <property name="geometry">
-     <rect>
-      <x>200</x>
-      <y>250</y>
-      <width>151</width>
-      <height>91</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Calibri</family>
-      <pointsize>12</pointsize>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">image: url(./img5.png);
-background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:0, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 0));</string>
-    </property>
-    <property name="inputMethodHints">
-     <set>Qt::ImhHiddenText</set>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
    <widget class="QPushButton" name="img_button">
     <property name="geometry">
      <rect>
@@ -379,7 +362,7 @@ color: rgb(230, 230, 230);
      <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextEditable|Qt::TextEditorInteraction|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
     </property>
    </widget>
-   <widget class="QPushButton" name="next_button">
+   <widget class="QPushButton" name="next_button2">
     <property name="geometry">
      <rect>
       <x>800</x>
@@ -425,13 +408,88 @@ QPushButton#pushButton:pressed{
      <bool>false</bool>
     </property>
    </widget>
+   <widget class="QProgressBar" name="progressBar2">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>650</y>
+      <width>141</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="cursor">
+     <cursorShape>WaitCursor</cursorShape>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::NoContextMenu</enum>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 0);
+border:none;</string>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhNone</set>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+    <property name="textVisible">
+     <bool>true</bool>
+    </property>
+    <property name="invertedAppearance">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="loading_img">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>270</y>
+      <width>31</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhHiddenText</set>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="ok_button">
    <property name="geometry">
     <rect>
-     <x>690</x>
+     <x>640</x>
      <y>500</y>
-     <width>111</width>
+     <width>101</width>
      <height>41</height>
     </rect>
    </property>
@@ -445,7 +503,7 @@ QPushButton#pushButton:pressed{
     <string notr="true">background-color: rgb(42, 42, 42);
 border:none;
 border-bottom: 2px solid rgb(35, 35, 35);
-color: rgb(214, 214, 214);
+color: rgb(250, 250, 250);
 border-bottom-right-radius: 5px;
 border-bottom-left-radius: 5px;
 border-top-right-radius: 5px;
@@ -458,7 +516,7 @@ QPushButton#pushButton:pressed{
 }</string>
    </property>
    <property name="text">
-    <string>o k</string>
+    <string>Insert</string>
    </property>
   </widget>
   <widget class="QFrame" name="horizontalFrame">
@@ -509,14 +567,50 @@ background-color: rgb(255, 255, 255);</string>
     </item>
    </layout>
   </widget>
+  <widget class="QPushButton" name="reset_button">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>500</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Calibri</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(230, 50, 50);
+border:none;
+border-bottom: 2px solid rgb(35, 35, 35);
+color: rgb(255, 255, 255);
+border-bottom-right-radius: 5px;
+border-bottom-left-radius: 5px;
+border-top-right-radius: 5px;
+border-top-left-radius: 5px;
+
+QPushButton#pushButton:pressed{
+	padding-left:5px;
+	padding-top:5px;
+	background-color: rgb(194, 194, 194);
+}</string>
+   </property>
+   <property name="text">
+    <string>Reset</string>
+   </property>
+  </widget>
   <zorder>frame</zorder>
   <zorder>input_info</zorder>
   <zorder>label</zorder>
   <zorder>input_name</zorder>
   <zorder>input_age</zorder>
   <zorder>input_height</zorder>
-  <zorder>pushButton</zorder>
+  <zorder>ok_button</zorder>
   <zorder>horizontalFrame</zorder>
+  <zorder>reset_button</zorder>
  </widget>
  <tabstops>
   <tabstop>input_name</tabstop>
@@ -542,7 +636,7 @@ background-color: rgb(255, 255, 255);</string>
    </hints>
   </connection>
   <connection>
-   <sender>next_button</sender>
+   <sender>next_button2</sender>
    <signal>clicked()</signal>
    <receiver>step2</receiver>
    <slot>gotonextpage()</slot>
@@ -589,6 +683,102 @@ background-color: rgb(255, 255, 255);</string>
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>ok_button</sender>
+   <signal>clicked()</signal>
+   <receiver>step2</receiver>
+   <slot>push_ok_button()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>706</x>
+     <y>516</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>763</x>
+     <y>851</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>input_name</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>step2</receiver>
+   <slot>info()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>613</x>
+     <y>243</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>613</x>
+     <y>806</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>input_age</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>step2</receiver>
+   <slot>info()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>646</x>
+     <y>308</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>649</x>
+     <y>818</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>input_height</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>step2</receiver>
+   <slot>info()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>705</x>
+     <y>362</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>835</x>
+     <y>807</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>next_button2</sender>
+   <signal>clicked()</signal>
+   <receiver>progressBar2</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>938</x>
+     <y>716</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>930</x>
+     <y>673</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>reset_button</sender>
+   <signal>clicked()</signal>
+   <receiver>step2</receiver>
+   <slot>reset_info()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>840</x>
+     <y>518</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1028</x>
+     <y>520</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>filedialog_open()</slot>
@@ -596,5 +786,8 @@ background-color: rgb(255, 255, 255);</string>
   <slot>input_info()</slot>
   <slot>female()</slot>
   <slot>male()</slot>
+  <slot>push_ok_button()</slot>
+  <slot>info()</slot>
+  <slot>reset_info()</slot>
  </slots>
 </ui>
