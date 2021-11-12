@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>step2</class>
+ <widget class="QDialog" name="step2">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Bone Age</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>boneage_icon.png</normaloff>boneage_icon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(247, 242, 231);</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>false</bool>
+  </property>
+  <property name="modal">
+   <bool>false</bool>
+  </property>
+  <widget class="QLabel" name="input_info">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>170</y>
+     <width>331</width>
+     <height>421</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Calibri</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+border-bottom-right-radius: 20px;
+border-bottom-left-radius: 20px;
+border-top-right-radius: 20px;
+border-top-left-radius: 20px;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>180</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Calibri</family>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="whatsThis">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(255, 255, 255);
+color: rgb(42, 42, 42)</string>
+   </property>
+   <property name="text">
+    <string>Info</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="input_name">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>230</y>
+     <width>281</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Calibri</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+border:none;
+border-bottom: 2px solid rgb(35, 35, 35);
+color: rgb(124, 124, 124);
+padding-bottom: 7px;</string>
+   </property>
+   <property name="placeholderText">
+    <string>Name</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="input_age">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>290</y>
+     <width>280</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Calibri</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+border:none;
+border-bottom: 2px solid rgb(35, 35, 35);
+color: rgb(124, 124, 124);
+padding-bottom: 7px;</string>
+   </property>
+   <property name="placeholderText">
+    <string>Age</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="input_height">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>350</y>
+     <width>280</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Calibri</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+border:none;
+border-bottom: 2px solid rgb(35, 35, 35);
+color: rgb(124, 124, 124);
+padding-bottom: 7px;</string>
+   </property>
+   <property name="placeholderText">
+    <string>Height</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>981</width>
+     <height>781</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Calibri</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <property name="lineWidth">
+    <number>10</number>
+   </property>
+   <widget class="QLabel" name="input_img">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>70</y>
+      <width>481</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>AcadEref</family>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(230, 230, 230);
+font: 11pt &quot;AcadEref&quot;; color: rgb(150, 150, 150);</string>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhHiddenText</set>
+    </property>
+    <property name="lineWidth">
+     <number>-2</number>
+    </property>
+    <property name="text">
+     <string>여기에 이미지가 출력됩니다.</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="indent">
+     <number>2</number>
+    </property>
+    <property name="openExternalLinks">
+     <bool>true</bool>
+    </property>
+    <property name="textInteractionFlags">
+     <set>Qt::NoTextInteraction</set>
+    </property>
+   </widget>
+   <widget class="QDateTimeEdit" name="time2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>194</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Adobe 고딕 Std B</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(216, 211, 205);</string>
+    </property>
+    <property name="wrapping">
+     <bool>false</bool>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+    <property name="buttonSymbols">
+     <enum>QAbstractSpinBox::NoButtons</enum>
+    </property>
+    <property name="minimumDateTime">
+     <datetime>
+      <hour>0</hour>
+      <minute>0</minute>
+      <second>0</second>
+      <year>1753</year>
+      <month>9</month>
+      <day>14</day>
+     </datetime>
+    </property>
+    <property name="displayFormat">
+     <string>yyyy-MM-dd  hh:mm</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="img_button">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>670</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(121, 122, 126);
+border:none;
+border-bottom: 2px solid rgb(35, 35, 35);
+color: rgb(50, 50, 50);
+border-bottom-right-radius: 8px;
+border-bottom-left-radius: 8px;
+border-top-right-radius: 8px;
+border-top-left-radius: 8px;
+color: rgb(255, 255, 255);
+
+QPushButton#pushButton:pressed{
+	padding-left:5px;
+	padding-top:5px;
+	background-color: rgb(194, 194, 194);
+}</string>
+    </property>
+    <property name="text">
+     <string>select</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="description_img">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>670</y>
+      <width>361</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 173, 181);
+border:none;
+color: rgb(230, 230, 230);
+</string>
+    </property>
+    <property name="text">
+     <string>upload original x-ray image</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="textInteractionFlags">
+     <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextEditable|Qt::TextEditorInteraction|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="next_button2">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>680</y>
+      <width>141</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(236, 236, 236);
+border:none;
+border-bottom: 2px solid rgb(35, 35, 35);
+color: rgb(50, 50, 50);
+border-bottom-right-radius: 8px;
+border-bottom-left-radius: 8px;
+border-top-right-radius: 8px;
+border-top-left-radius: 8px;
+
+QPushButton#pushButton:pressed{
+	padding-left:5px;
+	padding-top:5px;
+	background-color: rgb(194, 194, 194);
+}</string>
+    </property>
+    <property name="text">
+     <string>NEXT &gt;&gt;</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <selectedon>:/newPrefix/dashboard2.ui</selectedon>
+     </iconset>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBar2">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>650</y>
+      <width>141</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="cursor">
+     <cursorShape>WaitCursor</cursorShape>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::NoContextMenu</enum>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 0);
+border:none;</string>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhNone</set>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+    <property name="textVisible">
+     <bool>true</bool>
+    </property>
+    <property name="invertedAppearance">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="loading_img">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>270</y>
+      <width>31</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhHiddenText</set>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="ok_button">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>500</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Calibri</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(42, 42, 42);
+border:none;
+border-bottom: 2px solid rgb(35, 35, 35);
+color: rgb(250, 250, 250);
+border-bottom-right-radius: 5px;
+border-bottom-left-radius: 5px;
+border-top-right-radius: 5px;
+border-top-left-radius: 5px;
+
+QPushButton#pushButton:pressed{
+	padding-left:5px;
+	padding-top:5px;
+	background-color: rgb(194, 194, 194);
+}</string>
+   </property>
+   <property name="text">
+    <string>Insert</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="horizontalFrame">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>410</y>
+     <width>281</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-color: rgb(255, 255, 255);
+background-color: rgb(255, 255, 255);</string>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QRadioButton" name="male_btn">
+      <property name="font">
+       <font>
+        <family>Calibri</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Male</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="female_btn">
+      <property name="font">
+       <font>
+        <family>Calibri</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Female</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="reset_button">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>500</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Calibri</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(230, 50, 50);
+border:none;
+border-bottom: 2px solid rgb(35, 35, 35);
+color: rgb(255, 255, 255);
+border-bottom-right-radius: 5px;
+border-bottom-left-radius: 5px;
+border-top-right-radius: 5px;
+border-top-left-radius: 5px;
+
+QPushButton#pushButton:pressed{
+	padding-left:5px;
+	padding-top:5px;
+	background-color: rgb(194, 194, 194);
+}</string>
+   </property>
+   <property name="text">
+    <string>Reset</string>
+   </property>
+  </widget>
+  <zorder>frame</zorder>
+  <zorder>input_info</zorder>
+  <zorder>label</zorder>
+  <zorder>input_name</zorder>
+  <zorder>input_age</zorder>
+  <zorder>input_height</zorder>
+  <zorder>ok_button</zorder>
+  <zorder>horizontalFrame</zorder>
+  <zorder>reset_button</zorder>
+ </widget>
+ <tabstops>
+  <tabstop>input_name</tabstop>
+  <tabstop>input_age</tabstop>
+  <tabstop>input_height</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>img_button</sender>
+   <signal>clicked()</signal>
+   <receiver>step2</receiver>
+   <slot>filedialog_open()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>72</x>
+     <y>695</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>112</x>
+     <y>799</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>next_button2</sender>
+   <signal>clicked()</signal>
+   <receiver>step2</receiver>
+   <slot>gotonextpage()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>901</x>
+     <y>716</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>904</x>
+     <y>797</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>female_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>step2</receiver>
+   <slot>female()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>806</x>
+     <y>430</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>730</x>
+     <y>797</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>male_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>step2</receiver>
+   <slot>male()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>668</x>
+     <y>433</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>775</x>
+     <y>810</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ok_button</sender>
+   <signal>clicked()</signal>
+   <receiver>step2</receiver>
+   <slot>push_ok_button()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>706</x>
+     <y>516</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>763</x>
+     <y>851</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>input_name</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>step2</receiver>
+   <slot>info()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>613</x>
+     <y>243</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>613</x>
+     <y>806</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>input_age</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>step2</receiver>
+   <slot>info()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>646</x>
+     <y>308</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>649</x>
+     <y>818</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>input_height</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>step2</receiver>
+   <slot>info()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>705</x>
+     <y>362</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>835</x>
+     <y>807</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>next_button2</sender>
+   <signal>clicked()</signal>
+   <receiver>progressBar2</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>938</x>
+     <y>716</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>930</x>
+     <y>673</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>reset_button</sender>
+   <signal>clicked()</signal>
+   <receiver>step2</receiver>
+   <slot>reset_info()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>840</x>
+     <y>518</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1028</x>
+     <y>520</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>filedialog_open()</slot>
+  <slot>gotonextpage()</slot>
+  <slot>input_info()</slot>
+  <slot>female()</slot>
+  <slot>male()</slot>
+  <slot>push_ok_button()</slot>
+  <slot>info()</slot>
+  <slot>reset_info()</slot>
+ </slots>
+</ui>
