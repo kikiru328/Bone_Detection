@@ -3,6 +3,13 @@
 -----------------------------------------------------------
 ### 결과 / [Result]
 ![image](https://user-images.githubusercontent.com/60537388/141226133-dbff15df-f3db-46f6-9bce-506b361aafb8.png)
+-----------------------------------------------------------
+제작환경 / [Environment]
+
+	python == 3.8.10
+	Tensorflow == 2.7.0
+
+	
 ## 설명 / [Description]
   소아기의 왼쪽 손목과 손가락 관절이 보이는 x-ray사진을 YoLov5s와 Tjnet 딥러닝을 활용하여 골연령을 예측합니다. 예측된 골연령과 질병관리청에서 제공된 '소아 청소년 성장도표'를 활용하여 18세 기준 예상 신장을 도출합니다. 프로그램 사용을 용이하게 하기 위해 PyQT5를 활용하여 GUI를 구성하였습니다.
 
@@ -14,7 +21,7 @@
   
   Making Mask, removing backgroud, rotatimg image by wrist, classfying by binary, emphasizing bone by using Opencv module step by step.
   Preprocessing x-ray images 
-
+	
 ### 라벨링 처리 / [YoLov5 Annotation]
   전처리가 완료된 데이터를 LabelImg 프로그램으로 TW3기법 기반으로 객체를 지정한 후 YoLov5s에 학습시켰고, mAP 측정결과 평균 0.97로 좋은 성능을 보였습니다.
   
