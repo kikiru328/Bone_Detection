@@ -34,6 +34,10 @@
   (predicting boundary annotations using YoLov5s )
 
 ### 딥러닝 모델 학습 / [TJnet]
+
+![image](https://user-images.githubusercontent.com/60537388/146244677-6b96bf9b-7dc5-4593-b72d-32f6ac60cadf.png)
+
+
   도출된 손목과 손가락관절 데이터를 TJnet 모델에 대입하여 학습시킵니다. 특히 Tjnet의 가장 큰 특징인 Gender를 추가하여 성별의 차이 또한 학습하게 했습니다. 전체 데이터가 성별과 연령을 기준으로 크기가 다르기 때문에 학습, 검증 모델은 성별,연령을 기준으로 계층적무작위샘플링 0.7 : 0.3으로 만들었습니다.
 
   Fitting Crops of wrist and finger joints data into TJnet. Especially inserting gender which Tjnet model's biggest feature for fitting difference of gender. Train and validation dataset were made by using stratified shuffle split (train : 0.7 / validation : 0.3) based on gender and age because total dataset size was irregular.
