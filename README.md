@@ -33,7 +33,7 @@
   <욜로 결과 - 샘플데이터 / [Result YoLov5 - Sample data]>
   (predicting boundary annotations using YoLov5s )
 
-### 딥러닝 모델 학습 / [TJnet]
+### 딥러닝 모델 학습 / VGG기반 알고리즘, [TJnet]
 
 ![image](https://user-images.githubusercontent.com/60537388/146244677-6b96bf9b-7dc5-4593-b72d-32f6ac60cadf.png)
 
