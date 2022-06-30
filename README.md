@@ -1,9 +1,3 @@
-#  골연령 예측 / [Bone Age Prediction]
-![image](https://user-images.githubusercontent.com/60537388/146008300-9e3df392-955e-4041-aefa-73267ab5afad.png)
------------------------------------------------------------
-### 결과 / [Result]
-![image](https://user-images.githubusercontent.com/60537388/141226133-dbff15df-f3db-46f6-9bce-506b361aafb8.png)
------------------------------------------------------------
 제작환경 / [Environment]
 
 	python == 3.8.10
@@ -32,6 +26,10 @@
   
   <욜로 결과 - 샘플데이터 / [Result YoLov5 - Sample data]>
   (predicting boundary annotations using YoLov5s )
+
+# Details
+- Utils : bone1.py
+- GUI : bone_age.py
 
 ### 딥러닝 모델 학습 / VGG기반 알고리즘, [TJnet]
 
