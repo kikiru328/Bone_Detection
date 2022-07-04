@@ -8,6 +8,7 @@
 
 	python == 3.8.10
 	Tensorflow == 2.7.0
+	Torch == 1.11.0
 
 	
 ## 설명 / [Description]
@@ -21,6 +22,10 @@
   
   Making Mask, removing backgroud, rotatimg image by wrist, classfying by binary, emphasizing bone by using Opencv module step by step.
   Preprocessing x-ray images 
+  
+### 2022-07-04 Release Note :
+
+> 전처리 이하 YOLO진행, 속도 증대 및 정확도 상승.
 	
 ### 라벨링 처리 / [YoLov5 Annotation]
   전처리가 완료된 데이터를 LabelImg 프로그램으로 TW3기법 기반으로 객체를 지정한 후 YoLov5s에 학습시켰고, mAP 측정결과 평균 0.97로 좋은 성능을 보였습니다.
