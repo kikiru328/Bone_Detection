@@ -8,7 +8,7 @@
 
 	python == 3.8.10
 	Tensorflow == 2.7.0
-	Torch == 1.11.0
+	Torch == 1.11.0 
 
 	
 ## 설명 / [Description]
